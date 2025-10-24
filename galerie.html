@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exotic Travels – Galerie</title>
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mobile.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" aria-label="Exotic Travels" href="./index.html">
+        <img class="brand-logo" src="./images/logo.png" alt="Exotic Travels Logo">
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="hamburger"></span>
+      </label>
+      
+      <!-- Checkbox for mobile menu toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <a href="./index.html">Home</a>
+        <a href="./reisen.html">Reisen</a>
+        <a href="./reisepakete.html">Pakete</a>
+        <a href="./extras.html">Extras</a>
+        <a href="./galerie.html" aria-current="page">Galerie</a>
+        <a href="./kontakt.html">Kontakt</a>
+      </nav>
+      <a class="note-btn" href="https://www.heidenheim.dhbw.de/startseite" target="_blank" rel="noopener">
+        <span class="icon-bang" aria-hidden="true">!</span>
+        Fiktives&nbsp;Projekt der DHBW Heidenheim WWI2025
+      </a>
+    </div>
+  </header>
+  <main>
+    <header class="page-header">
+      <h1 class="page-title">Galerie</h1>
+      <p class="page-subtitle">
+        Einblicke in unsere (un)vergesslichen Reisen – echte Highlights aus den Abenteuern von Exotic Travels.
+      </p>
+    </header>
+    <section class="section" aria-label="Bildergalerie">
+      <div class="grid cols-3">
+        <figure class="card">
+          <img src="https://picsum.photos/seed/reise1/600/400" alt="Beispielbild einer Reise">
+          <figcaption>Rolltreppe zum Mount Everest</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://picsum.photos/seed/reise2/600/400" alt="Beispielbild einer Raketenreise">
+          <figcaption>Raketenreise zur Sonne</figcaption>
+        </figure>
+        <figure class="card">
+          <img src=".\images\da.png" alt="Beispielbild einer Expedition">
+          <figcaption>Expedition nach „Bielefeld“</figcaption>
+        </figure>
+      </div>
+    </section>
+    <hr class="linie" />
+    <section class="section prose">
+      <h2>Mehr entdecken</h2>
+      <p>Du willst selbst Teil dieser Abenteuer werden? Wirf einen Blick auf unsere <a href="./reisepakete.html">Reisepakete</a> oder 
+      <a href="./kontakt.html">schreib uns direkt</a> für individuelle Wünsche.</p>
+    </section>
+  </main>
+  <footer class="site-footer" aria-label="Footer Navigation">
+    <div class="footer-inner">
+      <nav class="footer-nav">
+        <a href="./index.html">Home</a>
+        <a href="./reisepakete.html">Reisepakete</a>
+        <a href="./extras.html">Extras</a>
+        <a href="./galerie.html" aria-current="page">Galerie</a>
+        <a href="./kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+    <p class="footer-copy">© 2025 Exotic Travels – Fiktives Projekt</p>
+  </footer>
+</body>
+</html>

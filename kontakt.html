@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exotic Travels – Kontakt</title>
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mobile.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" aria-label="Exotic Travels" href="./index.html">
+        <img class="brand-logo" src="./images/logo.png" alt="Exotic Travels Logo">
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="hamburger"></span>
+      </label>
+      
+      <!-- Checkbox for mobile menu toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <a href="./index.html">Home</a>
+        <a href="./reisen.html">Reisen</a>
+        <a href="./reisepakete.html">Pakete</a>
+        <a href="./extras.html">Extras</a>
+        <a href="./galerie.html">Galerie</a>
+        <a href="./kontakt.html" aria-current="page">Kontakt</a>
+      </nav>
+      <a class="note-btn" href="https://www.heidenheim.dhbw.de/startseite" target="_blank" rel="noopener">
+        <span class="icon-bang" aria-hidden="true">!</span>
+        Fiktives&nbsp;Projekt der DHBW Heidenheim WWI2025
+      </a>
+    </div>
+  </header>
+  <main>
+    <header class="page-header">
+      <h1 class="page-title">Kontakt</h1>
+      <p class="page-subtitle">
+        Sie haben Fragen, Wünsche oder möchten sich zu einem unserer fantastischen (und leicht verrückten) Angebote beraten lassen?  
+        Schreiben Sie uns – wir melden uns schnellstmöglich!
+      </p>
+    </header>
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Noch Fragen?</h2>
+      </div>
+      <form class="form" action="./kontakt.html" method="post">
+        <label>
+          <span>Ihr Name *</span>
+          <input class="input" type="text" name="name" placeholder="Max Mustermann" required>
+        </label>
+        <label>
+          <span>E-Mail *</span>
+          <input class="input" type="email" name="email" placeholder="max@example.com" required>
+        </label>
+        <label>
+          <span>Betreff</span>
+          <input class="input" type="text" name="subject" placeholder="Anfrage zu ...">
+        </label>
+        <label>
+          <span>Nachricht *</span>
+          <textarea class="textarea" name="msg" placeholder="Womit können wir helfen?" required></textarea>
+        </label>
+        <button class="btn" type="submit">Nachricht senden</button>
+      </form>
+    </section>
+    <section class="section prose">
+      <h2>So erreichen Sie uns</h2>
+      <p>Unsere fiktive Zentrale befindet sich in:</p>
+      <p><strong>Exotic Travels GmbH</strong><br>
+      Abenteuerstraße 42<br>
+      12345 Traumstadt<br>
+      Deutschland</p>
+      <p>
+        📞 <strong>Telefon:</strong> +49&nbsp;123&nbsp;456789<br>
+        ✉️ <strong>E-Mail:</strong> <a href="mailto:info@exotic-travels.example">info@exotic-travels.example</a>
+      </p>
+      <h3>Öffnungszeiten</h3>
+      <ul>
+        <li>Montag – Freitag: 09:00 – 18:00 Uhr</li>
+        <li>Samstag: 10:00 – 14:00 Uhr</li>
+        <li>Sonn- & Feiertage: geschlossen (wir sind dann selbst auf Reisen)</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer" aria-label="Footer Navigation">
+    <div class="footer-inner">
+      <nav class="footer-nav">
+        <a href="./index.html">Home</a>
+        <a href="./reisepakete.html">Reisepakete</a>
+        <a href="./extras.html">Extras</a>
+        <a href="./kontakt.html" aria-current="page">Kontakt</a>
+      </nav>
+    </div>
+    <p class="footer-copy">© 2025 Exotic Travels – Fiktives Projekt</p>
+  </footer>
+</body>
+</html>
