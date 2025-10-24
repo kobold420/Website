@@ -435,6 +435,8 @@ h1{ margin:48px 0 30px; color:#ffcf3f; }
   animation: landingHeroGlow 2.2s ease-in-out infinite alternate;
 }
 
+/* Galerie verwendet wieder Standard-Karten-Layout */
+
 .landing-hero-subtitle {
   font-size: 1.25rem;
   color: #b7c2ea; /* ehem. --text-muted */
