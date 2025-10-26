@@ -544,7 +544,7 @@ h1{ margin:48px 0 30px; color:#ffcf3f; }
 .back{
   transform:rotateY(-180deg);
   background:linear-gradient(145deg, #11182d, #0b1223);
-  color:#e9eefc; padding:20px; text-align:center; margin:0; z-index:3;
+  color:#e9eefc; padding-top:5%; text-align:center; margin:0; z-index:3;
   transition:transform 1.5s ease; border:1px solid rgba(255,255,255,.12);
 }
 .card-grid .card:hover .front{ transform:rotateY(180deg); }
