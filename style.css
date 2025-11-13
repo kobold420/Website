@@ -18,19 +18,23 @@ body
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*, *:before, *:after
+{
   box-sizing: inherit;
 }
+
 a
 { 
   color:#ffcf3f; text-decoration:none; 
 }
+
 img
 { 
   max-width:100%; display:block;
 }
 
-main {
+main
+{
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -38,7 +42,7 @@ main {
   overflow-x: hidden;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 390px){
   main {
     padding: 0 12px 32px;
   }
@@ -435,11 +439,9 @@ h1{ margin:48px 0 30px; color:#ffcf3f; }
   animation: landingHeroGlow 2.2s ease-in-out infinite alternate;
 }
 
-/* Galerie verwendet wieder Standard-Karten-Layout */
-
 .landing-hero-subtitle {
   font-size: 1.25rem;
-  color: #b7c2ea; /* ehem. --text-muted */
+  color: #b7c2ea;
   margin-bottom: 2rem;
 }
 
@@ -1033,4 +1035,89 @@ h5{ color:#ef6d2f; }
 
 .landing-hero h1.glow {
   animation: landingHeroGlow 2.2s ease-in-out infinite alternate;
+}
+#extras .grid {
+  align-items: stretch;
+}
+
+#extras .card {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto auto;
+  gap: 0.75rem;
+  height: 100%;
+  text-align: center;
+}
+
+#extras .card .scene {
+  margin: 0;
+}
+
+#extras .card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  background: rgba(0,0,0,.2);
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+#extras .card h3 {
+  margin: 10px 0 6px;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+#extras .card > p {
+  margin: 0 0 8px;
+}
+
+#extras .features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#extras .features li {
+  color: #e9eefc;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  margin: 6px 0;
+  padding: 8px 10px;
+  font-size: .95rem;
+  transition: background .2s;
+}
+
+#extras .features li:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+#extras .price.badge {
+  margin-bottom: 6px;
+}
+
+#extras .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+#extras .price.badge {
+  margin: 0;
+}
+
+
+#extras .card::after {
+  content: "* Demonstration; Einsatz je nach Region/Genehmigung.";
+  display: block;
+  margin-top: 6px;
+  font-size: .85rem;
+  color: #b7c2ea;
+  opacity: .95;
+}
+
+#extras .card small.muted {
+  display: none;
 }
